@@ -52,7 +52,7 @@ def main():
 
         result_print_color = '\033[92m' if result.outcome == WIN else '\033[91m'
 
-        print(f"\nOpponent picked: {result.opponent}, \033[1m{result_print_color}{result.outcome}\033[0m")
+        print(f"\nOpponent picked: {result.opponent_pick}, \033[1m{result_print_color}{result.outcome}\033[0m")
         again = input("\nPlay again? (y/n): ").strip().lower()
         if again != 'y':
             print("Thanks for playing.")
